@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mcp-serena": {
+      "command": "serena",
+      "args": [
+        "start-mcp-server",
+        "--context", "ide",
+        "--enable-web-dashboard", "false",
+        "--enable-gui-log-window", "false"
+      ]
+    }
+  }
+}
