@@ -7,6 +7,8 @@ versioning follows [SemVer](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.0.1] - 2026-04-24
+
 ### Added
 - Cargo workspace with `crates/core`, `crates/storage`, `crates/server`, `tools/robot` and shared `[workspace.dependencies]`
 - Root `Cargo.toml` with workspace-level version `0.0.1`, edition 2021, rust-version 1.82, and clippy/rust lints
