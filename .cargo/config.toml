@@ -1,0 +1,5 @@
+[build]
+target-dir = "target"
+
+[lints]
+workspace = true
