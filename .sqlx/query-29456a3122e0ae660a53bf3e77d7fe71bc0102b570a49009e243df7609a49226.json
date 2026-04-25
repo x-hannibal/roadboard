@@ -1,0 +1,38 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT from_task_id, to_task_id, dependency_type, created_at\n             FROM task_dependencies WHERE from_task_id = ? AND to_task_id = ?",
+  "describe": {
+    "columns": [
+      {
+        "name": "from_task_id",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "to_task_id",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "dependency_type",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "created_at",
+        "ordinal": 3,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "29456a3122e0ae660a53bf3e77d7fe71bc0102b570a49009e243df7609a49226"
+}

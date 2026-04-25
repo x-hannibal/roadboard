@@ -8,8 +8,18 @@ rust-version.workspace = true
 roadboard-core = { path = "../core" }
 sqlx           = { workspace = true }
 serde          = { workspace = true }
+serde_json     = { workspace = true }
 thiserror      = { workspace = true }
-tokio          = { workspace = true }
+anyhow         = { workspace = true }
+uuid           = { workspace = true }
+chrono         = { workspace = true }
+argon2         = { workspace = true }
+sha2           = { workspace = true }
+rand           = { workspace = true }
+hex            = { workspace = true }
+
+[dev-dependencies]
+tokio = { workspace = true }
 
 [lints]
 workspace = true

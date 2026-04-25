@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "UPDATE mcp_tokens SET status = 'revoked', revoked_at = ? WHERE id = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "223292b5465b8be80c50699e0b0b1340534c90abc6dbe302f4627ebd407c50f5"
+}

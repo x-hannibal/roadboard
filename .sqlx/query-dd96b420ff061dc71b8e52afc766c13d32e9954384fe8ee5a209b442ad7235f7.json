@@ -1,0 +1,44 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT sprint_id, task_id, added_at, carried_from_sprint_id, removed_at\n             FROM sprint_tasks WHERE task_id = ? ORDER BY added_at",
+  "describe": {
+    "columns": [
+      {
+        "name": "sprint_id",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "task_id",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "added_at",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "carried_from_sprint_id",
+        "ordinal": 3,
+        "type_info": "Text"
+      },
+      {
+        "name": "removed_at",
+        "ordinal": 4,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  "hash": "dd96b420ff061dc71b8e52afc766c13d32e9954384fe8ee5a209b442ad7235f7"
+}

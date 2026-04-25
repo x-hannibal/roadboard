@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "UPDATE sprint_tasks SET removed_at = ? WHERE sprint_id = ? AND task_id = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "ab89c948942a9b5721b8767b18ebc39aa11e259963de16b61f66fd31d1d32a2e"
+}

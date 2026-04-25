@@ -1,0 +1,104 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT id, project_id, milestone_id, title, description, status, priority,\n                    assignee_user_id, estimate, due_date, created_by_user_id, updated_by_user_id,\n                    completed_at, created_at, updated_at\n             FROM tasks WHERE id = ?",
+  "describe": {
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "project_id",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "milestone_id",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "title",
+        "ordinal": 3,
+        "type_info": "Text"
+      },
+      {
+        "name": "description",
+        "ordinal": 4,
+        "type_info": "Text"
+      },
+      {
+        "name": "status",
+        "ordinal": 5,
+        "type_info": "Text"
+      },
+      {
+        "name": "priority",
+        "ordinal": 6,
+        "type_info": "Text"
+      },
+      {
+        "name": "assignee_user_id",
+        "ordinal": 7,
+        "type_info": "Text"
+      },
+      {
+        "name": "estimate",
+        "ordinal": 8,
+        "type_info": "Text"
+      },
+      {
+        "name": "due_date",
+        "ordinal": 9,
+        "type_info": "Text"
+      },
+      {
+        "name": "created_by_user_id",
+        "ordinal": 10,
+        "type_info": "Text"
+      },
+      {
+        "name": "updated_by_user_id",
+        "ordinal": 11,
+        "type_info": "Text"
+      },
+      {
+        "name": "completed_at",
+        "ordinal": 12,
+        "type_info": "Text"
+      },
+      {
+        "name": "created_at",
+        "ordinal": 13,
+        "type_info": "Text"
+      },
+      {
+        "name": "updated_at",
+        "ordinal": 14,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      true,
+      false,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  "hash": "f469767dfe2471470921c929f8dc054e7f193c93f4f77b2dd3d24c6624a67d43"
+}

@@ -1,0 +1,38 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT from_task_id, to_task_id, dependency_type, created_at\n             FROM task_dependencies WHERE from_task_id = ? OR to_task_id = ?\n             ORDER BY created_at",
+  "describe": {
+    "columns": [
+      {
+        "name": "from_task_id",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "to_task_id",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "dependency_type",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "created_at",
+        "ordinal": 3,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "2f8ecd67998488a7fe05fa331255a7247002f2ea157131c5d3f3802773da6898"
+}

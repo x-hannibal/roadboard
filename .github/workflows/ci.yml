@@ -35,12 +35,18 @@ jobs:
   test:
     name: Tests
     runs-on: ubuntu-latest
+    env:
+      SQLX_OFFLINE: true
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
+      - name: Set up dev DB for sqlx offline check
+        run: |
+          cargo install sqlx-cli --no-default-features --features sqlite
+          DATABASE_URL=sqlite:./data/dev.db cargo sqlx migrate run
+          DATABASE_URL=sqlite:./data/dev.db cargo sqlx prepare --workspace --check
       - run: cargo test --all-features --workspace
-      # TODO M1: add `cargo sqlx prepare --check --workspace` once sqlx queries land
 
   web-build:
     name: Web build

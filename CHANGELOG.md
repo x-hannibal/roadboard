@@ -7,6 +7,18 @@ versioning follows [SemVer](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+- `roadboard-core`: domain types and repository traits for User, McpToken, Project, ProjectMember, Milestone, Sprint, Task, TaskDependency, SprintTask
+- `roadboard-storage`: sqlx-backed SQLite implementations for all 9 planning entities; Argon2 password hashing; SHA-256 MCP token hashing
+- SQLite migrations: users + tokens, projects + members, planning entities (milestones, sprints, tasks, dependencies, sprint_tasks)
+- `roadboard-server`: Axum app with cookie session auth (tower-sessions + SQLite store), double-submit CSRF middleware, bearer token auth middleware
+- REST CRUD endpoints under `/api` for all 8 planning entities + auth + token management
+- MCP transport at `POST /mcp` (JSON-RPC 2.0 dispatcher) and `GET /mcp` (SSE stub) behind bearer auth
+- 16 MCP planning tools: `initial_instructions`, `list/get/create_project`, `list/create_milestone`, `list/get_active/create_sprint`, `add/remove_task_from_sprint`, `list/get/create/update/update_status_task`
+- Cursor-based pagination (base64url JSON) on all `list_*` tools and REST endpoints
+- Stable MCP error envelope: FORBIDDEN, PROJECT_ACCESS_DENIED, NOT_FOUND, VALIDATION_ERROR, INVALID_ENUM, INVALID_REFERENCE, INVALID_CURSOR, CONFLICT, TASK_ALREADY_IN_SPRINT, TASK_PROJECT_MISMATCH, INTERNAL_ERROR
+- Integration tests: HTTP auth cycle, CRUD tasks, CSRF protection, MCP end-to-end planning flow (44 tests, 0 failures)
+
 ## [0.0.1] - 2026-04-24
 
 ### Added

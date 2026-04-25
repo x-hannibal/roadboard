@@ -1,0 +1,44 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT project_id, user_id, role, granted_by_user_id, created_at\n             FROM project_members WHERE project_id = ? AND user_id = ?",
+  "describe": {
+    "columns": [
+      {
+        "name": "project_id",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "user_id",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "role",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "granted_by_user_id",
+        "ordinal": 3,
+        "type_info": "Text"
+      },
+      {
+        "name": "created_at",
+        "ordinal": 4,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "7aa7268ba133992edc03387d5584992afdac8ba613c9fa4cfdd8e4288d2249fd"
+}

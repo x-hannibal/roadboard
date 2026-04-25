@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "INSERT INTO sprints (id, project_id, name, goal, start_date, end_date, status,\n             created_by_user_id, updated_by_user_id, created_at, updated_at)\n             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 11
+    },
+    "nullable": []
+  },
+  "hash": "039e9ea8a28167fad7da04428bbb92025e5193f428925683bf54a1a27d3ec3c3"
+}

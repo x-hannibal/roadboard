@@ -1,0 +1,80 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT id, project_id, name, goal, start_date, end_date, status,\n                    created_by_user_id, updated_by_user_id, created_at, updated_at\n             FROM sprints WHERE id = ?",
+  "describe": {
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "project_id",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "name",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "goal",
+        "ordinal": 3,
+        "type_info": "Text"
+      },
+      {
+        "name": "start_date",
+        "ordinal": 4,
+        "type_info": "Text"
+      },
+      {
+        "name": "end_date",
+        "ordinal": 5,
+        "type_info": "Text"
+      },
+      {
+        "name": "status",
+        "ordinal": 6,
+        "type_info": "Text"
+      },
+      {
+        "name": "created_by_user_id",
+        "ordinal": 7,
+        "type_info": "Text"
+      },
+      {
+        "name": "updated_by_user_id",
+        "ordinal": 8,
+        "type_info": "Text"
+      },
+      {
+        "name": "created_at",
+        "ordinal": 9,
+        "type_info": "Text"
+      },
+      {
+        "name": "updated_at",
+        "ordinal": 10,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "4772b7e69fe6f726915fc85e5a338cbcf214de88fe7905d4e2b0674295267485"
+}

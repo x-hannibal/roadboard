@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "INSERT INTO sprint_tasks (sprint_id, task_id, added_at, carried_from_sprint_id, removed_at)\n             VALUES (?, ?, ?, ?, NULL)\n             ON CONFLICT(sprint_id, task_id) DO UPDATE SET\n               added_at               = excluded.added_at,\n               carried_from_sprint_id = excluded.carried_from_sprint_id,\n               removed_at             = NULL",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 4
+    },
+    "nullable": []
+  },
+  "hash": "2ac4708d0959f161f05d3668a13eef94159b92a6453accfcff18787117bcf777"
+}

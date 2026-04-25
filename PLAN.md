@@ -51,35 +51,35 @@ without any UI.
 
 #### M1.S1 — Schema + core
 
-- [ ] User entity (migration + core trait + storage impl + tests)
-- [ ] MCPToken entity (migration + storage + auth helpers)
-- [ ] Project entity (migration + core + storage + tests)
-- [ ] ProjectMember entity (migration + core + storage + tests)
-- [ ] Milestone entity (migration + core + storage + tests)
-- [ ] Sprint entity (migration + core + storage + tests)
-- [ ] Task entity (migration + core + storage + tests)
-- [ ] TaskDependency entity (migration + storage + tests)
-- [ ] SprintTask entity (migration + storage + tests)
+- [x] User entity (migration + core trait + storage impl + tests)
+- [x] MCPToken entity (migration + storage + auth helpers)
+- [x] Project entity (migration + core + storage + tests)
+- [x] ProjectMember entity (migration + core + storage + tests)
+- [x] Milestone entity (migration + core + storage + tests)
+- [x] Sprint entity (migration + core + storage + tests)
+- [x] Task entity (migration + core + storage + tests)
+- [x] TaskDependency entity (migration + storage + tests)
+- [x] SprintTask entity (migration + storage + tests)
 
 #### M1.S2 — Server bootstrap + auth
 
-- [ ] Axum app skeleton with `/health` endpoint
-- [ ] Session cookie auth (tower-sessions + SQLite backend)
-- [ ] Bearer token auth middleware for `/mcp`
-- [ ] CSRF protection for cookie-authenticated mutations
-- [ ] REST CRUD endpoints under `/api` for the 8 planning entities
-- [ ] Integration test: HTTP create-update-list cycle for tasks
+- [x] Axum app skeleton with `/health` endpoint
+- [x] Session cookie auth (tower-sessions + SQLite backend)
+- [x] Bearer token auth middleware for `/mcp`
+- [x] CSRF protection for cookie-authenticated mutations
+- [x] REST CRUD endpoints under `/api` for the 8 planning entities
+- [x] Integration test: HTTP create-update-list cycle for tasks
 
 #### M1.S3 — MCP planning tools
 
-- [ ] `initial_instructions` tool (with stub registry)
-- [ ] Project tools: `list_projects`, `get_project`, `create_project`
-- [ ] Milestone tools: `list_milestones`, `create_milestone`
-- [ ] Sprint tools: `list_sprints`, `get_active_sprint`, `create_sprint`, `add_task_to_sprint`, `remove_task_from_sprint`
-- [ ] Task tools: `list_tasks`, `get_task`, `create_task`, `update_task`, `update_task_status`
-- [ ] Cursor-based pagination implementation for all `list_*` tools
-- [ ] Error envelope + stable error codes for all tools
-- [ ] Integration test: agent end-to-end flow (create project → milestone → sprint → task → status change) via MCP only
+- [x] `initial_instructions` tool (with stub registry)
+- [x] Project tools: `list_projects`, `get_project`, `create_project`
+- [x] Milestone tools: `list_milestones`, `create_milestone`
+- [x] Sprint tools: `list_sprints`, `get_active_sprint`, `create_sprint`, `add_task_to_sprint`, `remove_task_from_sprint`
+- [x] Task tools: `list_tasks`, `get_task`, `create_task`, `update_task`, `update_task_status`
+- [x] Cursor-based pagination implementation for all `list_*` tools
+- [x] Error envelope + stable error codes for all tools
+- [x] Integration test: agent end-to-end flow (create project → milestone → sprint → task → status change) via MCP only
 
 ### M2 — Memory & decision layer
 
